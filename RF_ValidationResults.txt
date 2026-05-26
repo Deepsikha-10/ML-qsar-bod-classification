@@ -1,0 +1,74 @@
+----------------------------
+RANDOM FOREST MODEL RESULTS:
+----------------------------
+
+User defined Settings:
+Each Bag Size (i.e., Size of each bag, as a percentage of the training set size. (default 100))= 100
+Maximum Depth (i.e. The maximum depth of the tree, 0 for unlimited. (default 0))= 0
+Number of randomly chosen features 'n' (default 0; if set '0' = int(log_2(#predictors)+1))= 0
+Number of iterations (default 100)= 100
+Seed number(*helps in regenerating the same Random Forest model)= 1
+
+INTERNAL VALIDATION METRICS(Training set):
+******************************************
+Number of Compounds in training set:  : 939
+Accuracy (in %; train) : 100
+Precision (in %; train) : 100
+Sensitivity (in %; train) : 100
+Specificity (in %; train) : 100
+F-measure (train) : 1
+MCC (train) : 1
+
+True Positive(train) : 296.0
+False Positive(train) : 0.0
+True Negative(train) : 643.0
+False Negative(train) : 0.0
+
+Cross-Validation Results (including WEKA output)
+------------------------------------------------
+
+Correctly Classified Instances         797               84.8775 %
+Incorrectly Classified Instances       142               15.1225 %
+Kappa statistic                          0.6337
+K&B Relative Info Score                 46.82   %
+K&B Information Score                  395.2963 bits      0.421  bits/instance
+Class complexity | order 0             844.2895 bits      0.8991 bits/instance
+Class complexity | scheme             2624.6219 bits      2.7951 bits/instance
+Complexity improvement     (Sf)      -1780.3324 bits     -1.896  bits/instance
+Mean absolute error                      0.2351
+Root mean squared error                  0.3359
+Relative absolute error                 54.4409 %
+Root relative squared error             72.2875 %
+Total Number of Instances              939     
+
+Number of Folds : 10
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.927    0.321    0.863      0.927    0.894      0.639    0.902     0.947     Negative
+                 0.679    0.073    0.810      0.679    0.739      0.639    0.902     0.813     Positive
+Weighted Avg.    0.849    0.243    0.846      0.849    0.845      0.639    0.902     0.905     
+
+Confusion Matrix
+---------------
+
+   a   b   <-- classified as
+ 596  47 |   a = Negative
+  95 201 |   b = Positive
+
+
+EXTERNAL VALIDATION METRICS(Test set):
+**************************************
+Number of Compounds in test set : 234
+Accuracy (in %; test) : 87.1795
+Precision (in %; test) : 78.3784
+Sensitivity (in %; test) : 80.5556
+Specificity (in %; test) : 90.1235
+F-measure (test) : 0.7945
+MCC (test) : 0.7015
+
+True Positive(test) : 58.0
+False Positive(test) : 16.0
+True Negative(test) : 146.0
+False Negative(test) : 14.0

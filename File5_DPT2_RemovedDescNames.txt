@@ -1,0 +1,8 @@
+List of the descriptor Name(s) that were removed after Data Pre-Treatment 2 (DPT-2):
+
+CONSTANT DESCRIPTOR(s) FOUND (Variance cut-off =0.001):
+-------------------------------
+
+INTER-CORRELATED DESCRIPTOR(s) FOUND (Inter-R^2 cut-off =0.99):
+---------------------------------------
+
